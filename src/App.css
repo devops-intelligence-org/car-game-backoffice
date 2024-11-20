@@ -1,19 +1,23 @@
-.App {
+/* General */
+body {
+
+}
+
+.backoffice {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backoffice-header {
+  background-color: #FF462D;
+  color: white;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backoffice-header h1 {
+  margin: 0;
 }
 
-.App-header {
+.backoffice-content {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +28,72 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.player-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 380px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.player-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.player-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.player-card p strong {
+  color: #000;
+}
+
+.games-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 0.5em;
+}
+
+.games-table th, .games-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.games-table th {
+  background-color: #4cdd84;
+  color: white;
+  font-weight: bold;
+}
+
+.games-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.games-table tbody td {
+  color: #555;
+}
+
+.games-table tbody td:nth-child(2) {
+  font-weight: bold;
+  color: #29707A;
 }
